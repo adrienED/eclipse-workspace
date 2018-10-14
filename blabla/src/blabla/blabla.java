@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /**
  * Un objet Songage permet de réaliser (définir, effectuer) un sondage.
  * Cet objet propose des méthodes pour définir la question, les réponses possibles,
