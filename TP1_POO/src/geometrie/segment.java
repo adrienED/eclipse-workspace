@@ -43,12 +43,19 @@ public class segment {
 		
 	}
 	
+	public void translater (Point deb ) {
+		
+		
+	}
+	
 	
 	
 	
 	public segment copy() {
 		return new segment (this.getDebut(),this.getFin());
 	}
+	
+	
 	
 }
 	  

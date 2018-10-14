@@ -21,7 +21,7 @@ public class chiffrement {
 				d = d + 1;
 
 			}
-			if (p < T[i]) { 
+			if (p < T[i]) {
 				W[f] = T[i];
 				f = f - 1;
 			}
