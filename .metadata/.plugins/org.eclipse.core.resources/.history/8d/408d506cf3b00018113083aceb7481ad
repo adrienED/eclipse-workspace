@@ -1,0 +1,24 @@
+
+public class TD1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		do
+		
+			int P;
+			do
+				System.out.println("Saisir les prix");
+				scanf(&A);
+			
+			while ((A!=0)
+					
+				
+					System.out.println(« La somme est »+P) ;
+	
+					
+			return;
+		
+	}
+
+

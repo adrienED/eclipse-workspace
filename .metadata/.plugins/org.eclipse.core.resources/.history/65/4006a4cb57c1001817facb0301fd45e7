@@ -1,0 +1,12 @@
+
+public class TD3_E1_test {
+
+	
+	
+	
+	public static void main (String args [] ) {
+		TD3_E1 t;
+		t=new TD3_E1 (2,4);
+		t.afficher();
+	}
+}

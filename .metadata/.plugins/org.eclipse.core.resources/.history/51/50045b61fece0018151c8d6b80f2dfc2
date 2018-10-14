@@ -1,0 +1,50 @@
+package geometrie;
+
+import java.util.Arrays;
+
+public class TestSegment {
+	
+
+	
+	public static void main (String [] args) {
+		
+		
+		
+		//Test origine
+		segment origine = new segment (new Point (0,0),new Point (0,0));		
+		Point P= new Point(0,0);
+		
+		if (origine.getDebut().getX() == P.getX() && origine.getDebut().getY()==P.getY())
+			System.out.println("Test origine.getDebut()                     [ok]");
+		else
+			System.out.println("Test origine.getDebut()                     [erreur]");
+
+
+		if (origine.getFin().getX() == P.getX() && origine.getFin().getY()==P.getY())
+			
+			System.out.println("Test origine.getFin()                     [ok]");
+		else
+			System.out.println("Test origine.getFin()                     [erreur]");
+		
+		
+		//teste new 
+		segment newS = new segment (new Point (1,2),new Point (3,4));
+		Point D= new Point(1,2);
+		Point F= new Point(3,4);
+		
+		if (newS.getDebut().getX() == P.getX() && origine.getDebut().getY()==P.getY())
+			System.out.println("Test origine.getDebut()                     [ok]");
+		else
+			System.out.println("Test origine.getDebut()                     [erreur]");
+
+
+		if (newS.getFin().getX() == P.getX() && origine.getFin().getY()==P.getY())
+			
+			System.out.println("Test origine.getFin()                     [ok]");
+		else
+			System.out.println("Test origine.getFin()                     [erreur]");
+		
+		
+	}
+
+}

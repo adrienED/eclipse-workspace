@@ -1,0 +1,43 @@
+
+„squid:S00117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùé„œþÿÿÿÿHÀRMINORZ
+CODE_SMELL
+~squid:S00117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùµ®HÁRMINORZ
+CODE_SMELL
+xsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(ÕÑÿäHÂRMAJORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HÃRMINORZ
+CODE_SMELL
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(Öµ‡HÄRMAJORZ
+CODE_SMELL
+\squid:S00108}")Either remove or fill this block of code.(ºö¢€úÿÿÿÿHÅRMAJORZ
+CODE_SMELL
+„squid:S00117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽëÌöûÿÿÿÿHÆRMINORZ
+CODE_SMELL
+„squid:S00117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…á¯ˆÿÿÿÿÿHÇRMINORZ
+CODE_SMELL
+squid:S00117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤°€àHÈRMINORZ
+CODE_SMELL
+squid:S00117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤°€àHÉRMINORZ
+CODE_SMELL
+„squid:S00117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùé„œþÿÿÿÿHÊRMINORZ
+CODE_SMELL
+Vsquid:S1125s")Remove the literal "false" boolean value.(Í¼‚HËRMINORZ
+CODE_SMELL
+Nsquid:S1643E"Use a StringBuilder instead.(¶ÖÒíûÿÿÿÿHÌRMINORZ
+CODE_SMELL
+squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¦üÿÿÿÿHÍRMINORZ
+CODE_SMELL
+Usquid:S1125q"(Remove the literal "true" boolean value.(”ëÏðHÎRMINORZ
+CODE_SMELL
+[squid:S2140a")Use "java.util.Random.nextInt()" instead.(½Ä›þÿÿÿÿHÏRMINORZ
+CODE_SMELL
+Isquid:S1643C"Use a StringBuilder instead.(ÚË¡HÐRMINORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(Ûòð³ùÿÿÿÿHÑRMAJORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ðž´«øÿÿÿÿHÒRMAJORZ
+CODE_SMELL
+Isquid:S1643b"Use a StringBuilder instead.(Ä–õÏHÓRMINORZ
+CODE_SMELL

@@ -1,0 +1,13 @@
+
+public class principal {
+
+	public static void main(String[] args) {
+
+		//DemoString.affiche(DemoString.Saisie());
+		//DemoString.affiVertical(DemoString.Saisie());
+		DemoString.compteCar(DemoString.Saisie(),'o');
+		
+
+	}
+
+}

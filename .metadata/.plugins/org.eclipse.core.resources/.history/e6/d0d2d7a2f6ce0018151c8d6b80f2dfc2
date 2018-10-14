@@ -1,0 +1,16 @@
+package geometrie;
+
+import java.util.Arrays;
+
+public class TestSegment {
+	
+	
+	
+	public static void main (String [] args) {
+		Point debut = new Point (3,2);
+		Point fin = new Point (5,6);
+		segment S = new segment (debut,fin);
+		
+	}
+
+}

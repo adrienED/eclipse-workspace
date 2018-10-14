@@ -1,0 +1,71 @@
+
+public class TD3_E1 {
+
+	int[][] T;
+
+	public TD3_E1(int L, int C) {
+
+		T = new int[L][C];
+		for (int l = 0; l < T.length; l++) {
+			for (int c = 0; c < T[l].length; c++) {
+				T[l][c] = alea();
+			}
+		}
+	}
+
+	private int alea() {
+		return (int) (Math.round(Math.random() * 10));
+	}
+
+	public void afficher() {
+		for (int l = 0; l < T.length; l++) {
+			for (int c = 0; c < T[l].length; c++) {
+
+				// entre 2 éléments de la même ligne du tableau on reste sur la meme ligne de la
+				// console
+				System.out.print(T[l][c] + " ");
+
+			}
+			// a la fin de l'affichage d'une ligne on passe a la ligne (dans la console au
+			// dessus)
+			System.out.println();
+		}
+
+	}
+
+	public int[] SommeEnligne() {
+
+		// declarer allouer le resultat
+		int[] res = new int[T.length];
+
+		// Pour chaque ligne
+		for (int l = 0; l < T.length; l++) {
+			// ini somme
+			res[l] = 0;
+			// calcule la somme, le long de la ligne
+			for (int c = 0; c < T[l].length; c++) {
+				res[l] += T[l][c];
+
+			}
+		}
+		return res;
+	}
+public int[] SommeEnColonne() {
+	
+	int[] res= new int[T[0].length];
+	//Hyp la table est rectangulaire, toutes les lignes ont la même longueur
+	
+	for(int c=0;c<T[0].length; c++) {
+		res[c]=0;
+	
+	for (int l=0;l<T[0].length;l++) {
+		res[c]+=T[l][c];
+	}
+	}
+	return res;
+		}
+	}
+
+	
+
+

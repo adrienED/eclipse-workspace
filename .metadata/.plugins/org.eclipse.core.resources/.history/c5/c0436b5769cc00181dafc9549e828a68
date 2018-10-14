@@ -1,0 +1,56 @@
+
+public class DemoPalin {
+
+	public static void main(String[] args) {
+		// System.out.println( estPalindrome ("kayak"));
+		//System.out.println(inverse("kayak"));
+		//System.out.println(estPalindrome2("kayak"));
+		System.out.println(genere());
+	}
+
+	public static boolean estPalindrome(String S) {
+
+		boolean r = true;
+		for (int i = 0; i < S.length() / 2; i++) {
+			if ((S.charAt(i)) != (S.charAt(S.length() - 1 - i)))
+				r = false;
+		}
+
+		return r;
+
+	}
+
+	public static String inverse(String s) {
+
+		String r = "";
+		for (int i = 0; i < s.length(); i++) {
+			r = s.charAt(i) + r;
+
+		}
+		return r;
+	}
+
+	public static boolean estPalindrome2(String s) {
+		
+		return (s.equals(inverse(s)));
+	}
+	
+	public static String genere () {
+		String c = "";
+
+	
+		for (int i=0;i<11;i++) {
+			int a=(int) (Math.floor(Math.random() * 4) + 1)  ;
+			if (a==1) c=c+':';
+			if(a==2) c=c+'-';
+			if(a==3) c=c+'(';
+			if(a==4) c=c+')';
+			
+		}
+		
+		
+		
+		return c;
+	}
+
+}

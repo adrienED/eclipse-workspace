@@ -1,0 +1,34 @@
+package geometrie;
+
+public class segment {
+	
+	public Point debut = new Point (0,0);
+	public Point fin = new Point (0,0);
+
+	
+	//constructeur
+	
+
+	
+	public segment (Point debut, Point fin) {
+		this.debut=debut;
+		this.fin=fin;
+	}
+	
+	public Point getDebut() {
+		return debut;
+	}
+	
+	public Point getFin() {
+		return fin;
+	}
+	
+	
+	//methodes
+	
+	//attributs
+	
+	//print.out A;
+	//print.out B;
+
+}

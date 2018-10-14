@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class motdepass {
+	
+	
+	
+
+	public static void main(String[] args) {
+	
+		saisiePwd();
+	}
+
+	
+	
+	public static void saisiePwd (){
+		String S;
+		System.out.println("Saisir mot de passe");
+		Scanner sc = new Scanner (System.in);
+		S=sc.next();
+		System.out.println(S);
+		
+		
+		
+		
+	
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}

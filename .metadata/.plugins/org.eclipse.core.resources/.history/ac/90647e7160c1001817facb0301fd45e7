@@ -1,0 +1,19 @@
+
+public class TD3_E1_test {
+
+	
+	
+	
+	public static void main (String args [] ) {
+		TD3_E1 t;
+		t=new TD3_E1 (2,4);
+		t.afficher();
+		
+		int[] s= t.SommeEnligne();
+		// afficher somme 
+		System.out.println(java.util.Arrays.toString(s));
+		
+	}
+}
+//la classe Arrays contient methode manip tab 1D et 2D 
+// La methode toString renvoie une chaine avec tous les éléments tableau

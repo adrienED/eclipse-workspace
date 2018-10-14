@@ -1,0 +1,14 @@
+package swap;
+import java.util.Scanner;
+
+public class swap {
+
+	
+	public static void main (String [] args) {
+		
+		Scanner sc = new Scanner(System.in); System.out.println("Heure￿(hh:mm: ss)￿=￿?￿"); String ligne1 = sc . nextLine (); String heure = ligne1 . substring (0 ,2); String minute = ligne1 . substring (3 ,5); String seconde = ligne1 . substring (6); System.out.println(" Il￿est￿" + heure + "￿heure(s)￿"+ minute + "￿minute(s)￿"+ seconde + "￿seconde(s)￿"); 
+		
+	}
+	
+	
+}

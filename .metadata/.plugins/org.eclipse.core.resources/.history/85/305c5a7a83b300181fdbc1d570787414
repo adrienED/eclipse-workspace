@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class TD1_E4 {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+double Note;
+double Somme = 0 ;
+double nbNote = 0;
+String choix;
+
+do {
+	System.out.println("Note ?");
+	
+	Scanner sc = new Scanner(System.in);
+	Note = sc.nextInt();
+	Somme=Somme+Note;
+	nbNote=nbNote+1.0;
+
+	do {
+		System.out.println("Continuer la saisie ?");
+		Scanner ch = new Scanner(System.in);
+		choix = ch.next();
+		
+		
+	}
+	while((choix=="N") || (choix=="O"));
+}
+	while(choix=="N");
+	
+System.out.println("La moyenne est "+Somme/nbNote);
+	}
+
+}

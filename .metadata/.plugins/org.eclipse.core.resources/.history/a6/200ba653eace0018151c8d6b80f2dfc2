@@ -1,0 +1,28 @@
+package geometrie;
+
+public class Fraction {
+
+	public static void main(String[] args) {
+		
+		/**
+		2 
+		* Calcule le pgcd de deux entiers
+		3 
+		* @param a un des deux entiers
+		4 
+		* @param b un des deux entiers
+		5 
+		* @return le pgcd des deux entiers
+		6 
+		*/
+		public static int pgcd (int a, int b) {
+			
+			
+			
+			
+			
+		}
+
+
+}
+}
