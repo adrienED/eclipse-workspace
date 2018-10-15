@@ -75,7 +75,7 @@ public class TestSegment {
 		
 		
 		if (origine.getDebut().getX() == deb.getX() && origine.getDebut().getY()==deb.getY())
-			System.out.println("Test origine.settDebut()                     [ok]");
+			System.out.println("Test origine.setDebut()                     [ok]");
 		else
 			System.out.println("Test origine.setDebut()                     [erreur]");
 
@@ -102,18 +102,18 @@ public class TestSegment {
 		
 		
 		
-		if (transeg.getDebut().getX() == start.getX() && origine.getDebut().getY()==start.getY())
-			System.out.println("Test origine.trans()                     [ok]");
+		if (transeg.getDebut().getX() == start.getX() && transeg.getDebut().getY()==start.getY())
+			System.out.println("Test transeg.trans()                     [ok]");
 		else
-			System.out.println("Test origine.trans()                     [erreur]");
+			System.out.println("Test transeg.trans()                     [erreur]");
 		
 		
 		
-		if (transeg.getFin().getX() == end.getX() && origine.getFin().getY()==end.getY())
+		if (transeg.getFin().getX() == end.getX() && transeg.getFin().getY()==end.getY())
 			
-			System.out.println("Test origine.trans()                     [ok]");
+			System.out.println("Test transeg.trans()                     [ok]");
 		else
-			System.out.println("Test origine.trans()                     [erreur]");
+			System.out.println("Test transeg.trans()                     [erreur]");
 		
 		
 		

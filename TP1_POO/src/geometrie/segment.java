@@ -43,9 +43,10 @@ public class segment {
 		
 	}
 	
-	public void translater (Point deb ) {
+	public void translater (Point deb, Point fin ) {
 		
-		
+		this.setDebut(this.getDebut().getX()+deb.getX(),this.getDebut().getY()+deb.getY());
+		this.setFin(this.getFin().getX()+fin.getX(), this.getFin().getY()+fin.getY());
 	}
 	
 	
