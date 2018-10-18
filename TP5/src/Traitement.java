@@ -1,23 +1,25 @@
 
 public class Traitement {
 
+	private static String S;
+	
 
-
+	
+	
+	public Traitement (String s) {
+		
+		this.S=s;
+	}		
+	
+	
+	public static String getAdresseIP (){
 		
 		
-	public static String getAdresseIP (String S){
-		int n;
-		String ip="";
-		 n= S.indexOf(" ");
-		 
-		for (int i=0;i<n;i++) {
-			ip+=S.charAt(i);
-		}
 		
-		return ip;
+		int n =S.indexOf(" ");
+		return S.substring(0,n);	
 		
 	}
-		
 		
 		
 		
