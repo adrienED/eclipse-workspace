@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TP1_E3_Q2 {
 
 	public static void main(String[] args) {
-		SEPARE(364);
+		SEPARE(369);
 	}
 
 	public static void SEPARE(int N) {
@@ -22,7 +22,7 @@ public class TP1_E3_Q2 {
 		System.out.println("le chiffre des centaine est " + C);
 		System.out.println("le chiffre des dizaine est " + D);
 		System.out.println("le chiffre des unité est " + U);
-
+		
 	}
 
 }
