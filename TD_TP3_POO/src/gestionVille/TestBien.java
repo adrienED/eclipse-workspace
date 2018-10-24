@@ -23,10 +23,12 @@ public static void main (String [] args) {
 	}
 	else 
 		System.out.println("Erreur");
-}
+
+System.out.println("Test Constructeur avec paramètres");
+Logement b3 = new Logement (100,20,10,40);
 
 	
 
 
-
+}
 }

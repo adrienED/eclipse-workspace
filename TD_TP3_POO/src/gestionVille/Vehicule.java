@@ -3,10 +3,6 @@
  */
 package gestionVille;
 
-/**
- * @author adrien
- *
- */
 public class Vehicule extends Bien {
 	
 	private String numeroImmatriculation;
@@ -21,10 +17,7 @@ public class Vehicule extends Bien {
 		this.nbPlaces=0;
 	}
 
-	/**
-	 * @param v
-	 * @param c
-	 */
+
 	public Vehicule(int v, int c, String numImm, int nbP) {
 		super(v, c);
 		this.numeroImmatriculation=numImm;

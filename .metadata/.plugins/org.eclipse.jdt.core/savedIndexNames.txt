@@ -4,7 +4,6 @@ INDEX VERSION 1.130+C:\Users\adrie\eclipse-workspace\.metadata\.plugins\org.ecli
 160212808.index
 3108431294.index
 1084624933.index
-4116796118.index
 3179522525.index
 3773760125.index
 1622776731.index
