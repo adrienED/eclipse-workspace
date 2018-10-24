@@ -22,7 +22,7 @@ public abstract class  Bien {
 		
 	}
 	
-	
+	abstract int getNbPlaces();
 	
 	
 	/**
@@ -56,11 +56,7 @@ public abstract class  Bien {
 		String info = "Bien : \n";		
 		info+= "Valeur en euro : "+ValEuros+"\n";
 		info+="Cout entretien mensuel : "+this.CoutEntretienMensuel+"\n";
-		
-		
-		
-		
-		
+	
 		return info;
 	}	
 
