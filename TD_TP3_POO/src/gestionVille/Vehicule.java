@@ -46,6 +46,14 @@ public class Vehicule extends Bien {
 		return nbPlaces;
 	}
 	
+	public String getInfo() {
+		String info = super.getInfo();
+		info+="Vehicule :\n";
+		info+="Numero imatriculation : "+this.numeroImmatriculation+"\n";
+		info+="Nombre de places : "+this.nbPlaces+"\n";
+		return info; 
+	}
+	
 	
 
 }

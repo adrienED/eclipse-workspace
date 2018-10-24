@@ -1,6 +1,6 @@
 package gestionVille;
 
-public class Bien {
+public abstract class  Bien {
 	
 	
 	private int ValEuros;
