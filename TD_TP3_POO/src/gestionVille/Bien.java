@@ -22,7 +22,6 @@ public abstract class  Bien {
 		
 	}
 	
-	abstract int getNbPlaces();
 	
 	
 	/**
