@@ -13,9 +13,9 @@ public class recherche {
 	
 	public static int [] insertion (int t []) {
 		int tmp=0;
-		//for (int i=0;i<t.length-1;i++) {
+		for (int i=0;i<t.length-1;i++) {
 			
-		do {	
+			
 			
 			if (t[i]>t[i+1]) {
 				tmp=t[i];
@@ -28,5 +28,6 @@ public class recherche {
 		return t;
 		
 		
-	}
+	
+}
 }

@@ -1,5 +1,6 @@
-public class TD0 {
+	/*public class TD0 {
 	
+
 	
 	public TD0 (int a,int b) {
 		int [][] t= new int [a][b];
@@ -32,3 +33,4 @@ public class TD0 {
 
 	}
 }
+	*/
