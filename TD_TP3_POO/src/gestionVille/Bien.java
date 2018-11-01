@@ -7,6 +7,9 @@ public abstract class  Bien {
 	private int CoutEntretienMensuel;
 	public static int NbExemplaires=0;
 	
+	 public abstract int getNb();
+	 public abstract String getNumeroImatriculation();
+	
 	
 	public Bien() {
 		this.ValEuros=0;
@@ -57,6 +60,6 @@ public abstract class  Bien {
 		info+="Cout entretien mensuel : "+this.CoutEntretienMensuel+"\n";
 	
 		return info;
-	}	
+	}
 
 }

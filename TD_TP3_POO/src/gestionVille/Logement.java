@@ -32,13 +32,11 @@ public Logement(int v, int c, int saS, int nbPL) {
 		this.nbPersonnesLogees=nbPL;
 	}
 	
-	
-	
 
 	/**
  * @return the superficieAuSol
  */
-public int getSuperficieAuSol() {
+public int get() {
 	return superficieAuSol;
 }
 
@@ -54,10 +52,9 @@ public void setSuperficieAuSol(int superficieAuSol) {
 /**
  * @return the nbPersonnesLogees
  */
-public int getNbPersonnesLogees() {
+public int getNb() {
 	return nbPersonnesLogees;
 }
-
 
 /**
  * @param nbPersonnesLogees the nbPersonnesLogees to set
@@ -73,6 +70,12 @@ public String getInfo() {
 	info+="Superficie au sol : "+this.superficieAuSol+"\n";
 	info+="Nombre de personne logées : "+this.nbPersonnesLogees+"\n";
 	return info; 
+}
+
+
+@Override
+public String getNumeroImatriculation() {
+	return null;
 }
 
 }

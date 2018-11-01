@@ -28,14 +28,14 @@ public class Vehicule extends Bien {
 	/**
 	 * @return the numeroImmatriculation
 	 */
-	public String getNumeroImmatriculation() {
+	public String getNumeroImatriculation() {
 		return numeroImmatriculation;
 	}
 
 	/**
 	 * @return the nbPlaces
 	 */
-	public int getNbPlaces() {
+	public int getNb() {
 		return nbPlaces;
 	}
 	
@@ -46,7 +46,5 @@ public class Vehicule extends Bien {
 		info+="Nombre de places : "+this.nbPlaces+"\n";
 		return info; 
 	}
-	
-	
 
 }
