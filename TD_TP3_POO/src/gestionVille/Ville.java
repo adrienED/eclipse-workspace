@@ -14,11 +14,26 @@ public class Ville {
 	}
 	
 	
-	public Ville () {
-
+	public Ville (int i,int v, int c, String numImm, int nbP) {
+		
+			
+			
+		Vehicule V = new Vehicule (v, c, numImm, nbP);
+		this.tabBien[i]= V;	
 		
 	}
+
+	public Ville (int i,int v, int c, int saS, int nbPL) {
+		
+		Logement L = new Logement ();
+		this.tabBien[i]= L;	
+	}
 	
+	/*
+	public getInfo(int indice) {
+		
+		if ()
+	}
 	
 	
 
@@ -39,5 +54,13 @@ public class Ville {
 		
 		return 
 	}
-*/
+
+
+	/**
+	 * @return the tabBien
+	 */
+	public Bien[] getTabBien() {
+		return tabBien;
+	}
+
 }

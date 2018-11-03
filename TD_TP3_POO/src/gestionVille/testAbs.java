@@ -5,9 +5,9 @@ public class testAbs {
 	public static void main(String[] args) {
 		
 		//imat
-		Vehicule imat  = new Vehicule (1000, 50, "AM-798-HS", 4);
+		Ville V  = new Ville (0,100, 50, "AM-798-HS", 4);
 		
-		System.out.println();
+		System.out.println(V.getTabBien());
 
 	}
 
