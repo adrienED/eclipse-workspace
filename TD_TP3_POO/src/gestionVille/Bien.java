@@ -7,8 +7,8 @@ public abstract class  Bien {
 	private int CoutEntretienMensuel;
 	public static int NbExemplaires=0;
 	
-	 public abstract int getNb();
-	 public abstract String getNumeroImatriculation();
+	public abstract int getNb();
+	public abstract String getNumeroImatriculation();
 	
 	
 	public Bien() {

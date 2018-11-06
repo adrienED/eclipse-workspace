@@ -9,7 +9,9 @@ public class tri_principal {
 		// System.out.println(Arrays.toString(tri_insertion.insertion(t)));
 		// System.out.println(Arrays.toString(tri_selection.selection(t)));
 		//System.out.println(Arrays.toString(tri_bulle.bulle(t)));
-		System.out.println(Arrays.toString(tri_bulle.bulle(t)));
+		//System.out.println(Arrays.toString(tri_bulle.bulle(t)));
+		//Arrays.sort(t); System.out.println(Arrays.toString(t));
+		
 	}
 
 }

@@ -52,7 +52,7 @@ public void setSuperficieAuSol(int superficieAuSol) {
 /**
  * @return the nbPersonnesLogees
  */
-public int getNb() {
+public int getNbPersonnesLogees() {
 	return nbPersonnesLogees;
 }
 
@@ -76,6 +76,13 @@ public String getInfo() {
 @Override
 public String getNumeroImatriculation() {
 	return null;
+}
+
+
+@Override
+public int getNb() {
+	// TODO Auto-generated method stub
+	return 0;
 }
 
 }

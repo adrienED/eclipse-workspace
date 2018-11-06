@@ -29,15 +29,15 @@ public class tri_tas {
 	public static int [] tas ( int [] t ) {
 		int tmp;
 		
-		for (int i=(t.length-1)/2;i>=0; i--) {
+		for (int i=(t.length-1);i>=0; i--) {
 			tamiser (t,i,t.length-1);
 		}
-		for (int i=t.length-1;i>=1; i--) {
+		for (int i=t.length-1;i>=0; i--) {
 			
 			tmp=t[i];
-			t[i]=t[1];
-			t[1]=tmp;
-			tamiser (t,1,i-1);
+			t[i]=t[0];
+			t[0]=tmp;
+			tamiser (t,0,i-1);
 		}
 		
 		return t;
