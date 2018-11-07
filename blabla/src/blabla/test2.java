@@ -16,7 +16,7 @@ public class test2 {
 		
 		
 		for (int Current : Biens)
-			System.out.println( Biens.getInfo());
+			System.out.println( () Current.getInfo());
 		
 		
 	}
