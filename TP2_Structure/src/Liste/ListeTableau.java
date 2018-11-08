@@ -60,37 +60,37 @@ public class ListeTableau implements Liste {
 
 	@Override
 	public void insererDebut(Object ob) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void insererApres(Object ob, Object pos) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public Object supprimerDebut() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Object supprimerApres(Object pos) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public boolean listeVide() {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
 	@Override
 	public int taille() {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
