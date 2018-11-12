@@ -156,7 +156,11 @@ public void creerListe (int n)
 	
 	public int taille() {
 		
-		int n=1;
+		
+		return nbrElements;
+	}
+		
+		/*int n=1;
 		courant=tete;
 		while(courant.suivant!=null)
 		{
@@ -166,6 +170,23 @@ public void creerListe (int n)
 		
 		
 		return n;
+	}
+	*/
+	
+	public void afficherMultiple (int n) {
+		
+		courant=tete;
+		System.out.println("\nListe Chainee : ");
+		
+		while (courant.suivant!=null) {
+			
+		
+		if ((int)courant.element%n==0) System.out.print(courant.element+ " ->");
+			courant=courant.suivant;
+		
+	}
+		
+		System.out.println(courant.element);
 	}
 
 	

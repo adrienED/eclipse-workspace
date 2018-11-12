@@ -22,6 +22,7 @@ public class ListeChaineeTest {
 		System.out.print("\nMaillon supprimé : " + item);
 		 listesimple.afficher();
 		System.out.println("\ntaille(): " + listesimple.taille());
+		listesimple.afficherMultiple(5);
 		
 		}
 		}
