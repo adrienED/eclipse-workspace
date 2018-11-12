@@ -9,16 +9,9 @@ public class test2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		for (int i=0;i<3;i++)
+		double k = 3.6;
+		int i =(int) (k + 0.5f);
 			System.out.println(i);
-		
-		ArrayList<Integer> Biens= new ArrayList<>();
-		
-		
-		for (int Current : Biens)
-			System.out.println( () Current.getInfo());
-		
-		
-	}
 
+}
 }
