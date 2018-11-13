@@ -4,9 +4,9 @@ public class Methode_dichtomique {
 	public static void main(String[] args) {
 
 //System.out.println(fx(2));
-System.out.println(iterations(1,2,Math.pow(10, -5)));
+//System.out.println(iterations(1,2,Math.pow(10, -5)));
 //System.out.println((Math.log(20-5)-Math.log(1))/Math.log(2));
-//affiche();
+affiche();
 	
 		}
 

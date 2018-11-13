@@ -1,5 +1,7 @@
 package test;
 
+import blog.AbstractPublishableItem;
+
 public class TestAbstractItem1 extends AbstractTest {
 
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
@@ -17,22 +19,22 @@ public class TestAbstractItem1 extends AbstractTest {
 	}
 	
 	public void testDeclaredMethods() {		
-		assertDeclaredMethod(blog.AbstractItem.class, "addTag", new Class[] { String.class }, "missing method addTag(String) in class AbstractItem");
+		assertDeclaredMethod(AbstractPublishableItem.class, "addTag", new Class[] { String.class }, "missing method addTag(String) in class AbstractItem");
 		// TODO: check return type is 'void'
 		
-		assertDeclaredMethod(blog.AbstractItem.class, "removeTag", new Class[] { String.class }, "missing method removeTag(String) in class AbstractItem");		
+		assertDeclaredMethod(AbstractPublishableItem.class, "removeTag", new Class[] { String.class }, "missing method removeTag(String) in class AbstractItem");		
 		// TODO: check return type is 'void'
 
-		assertDeclaredMethod(blog.AbstractItem.class, "tagCount", new Class[] { }, "missing method tagCount() in class AbstractItem");		
+		assertDeclaredMethod(AbstractPublishableItem.class, "tagCount", new Class[] { }, "missing method tagCount() in class AbstractItem");		
 		// TODO: check return type is 'int'
 
-		assertDeclaredMethod(blog.AbstractItem.class, "getTags", new Class[] { }, "missing method getTas() in class AbstractItem");		
+		assertDeclaredMethod(AbstractPublishableItem.class, "getTags", new Class[] { }, "missing method getTas() in class AbstractItem");		
 		// TODO: check return type is 'List<String>'
 	}
 
 	
 	public void testDeclaredConstructors() {		
-		assertDeclaredConstructor(blog.AbstractItem.class, new Class[] { long.class, String.class }, "missing constructor AbstractItem(long, String) in class AbstractItem");
+		assertDeclaredConstructor(AbstractPublishableItem.class, new Class[] { long.class, String.class }, "missing constructor AbstractItem(long, String) in class AbstractItem");
 	}
 
 }
