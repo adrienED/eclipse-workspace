@@ -12,5 +12,7 @@ public interface Taggable {
 	
 	List <String> getTags();
 	
+	public void AbstractItem();
+	
 }
 

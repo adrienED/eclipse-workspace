@@ -13,13 +13,14 @@ implements Taggable {
 	List<String> tags;
 
 	public void addTag(String tag) {
-		if(!tags.contains(tag)) {
-			tags.add(tag);
+		//Verifier que le tag n'existe pas dans la liste de tags
+		if(!tags.contains(tag)) { // contains inclue dans java
+			tags.add(tag); // add inclue dans java
 		}
 	}
 
 	public void removeTag(String tag) {
-		tags.remove(tag);
+		tags.remove(tag); //remove inclue dans java
 	}
 	
 	public int tagCount() {
