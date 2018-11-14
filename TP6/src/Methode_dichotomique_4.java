@@ -35,11 +35,9 @@ affiche();
 		int n=0;
 		int it=iterations(a,b,epsi);
 		//for (int n=0; n<=it; n++ ) {
-			while (epsi >(b-a)) {
+			while (epsi <(b-a)) {
 		n+=1;
-		
-		
-			double m = (a+b)/2;
+		double m = (a+b)/2;
 		
 		if ((fx(a)>0 && fx(m)>0) || (fx(a)<0 && fx(m)<0)) {
 			a= m;
