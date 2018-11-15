@@ -27,7 +27,7 @@ public class cas_general {
 				if (ligne != null) System.out.println(ligne);
 				
 			}
-		}
+		
 		catch (IOException e) {
 			eof = true;
 		}
@@ -35,5 +35,6 @@ public class cas_general {
 			entree.close();}
 		}
 	}
-
 }
+
+

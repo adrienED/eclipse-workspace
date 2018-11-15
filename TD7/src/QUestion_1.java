@@ -32,10 +32,10 @@ public class QUestion_1 {
 	}
 
 
-public static int alea() {
-	return (int) (Math.round(Math.random()*70)-20);
+//public static int alea() {
+	//return (int) (Math.round(Math.random()*70)-20);
 
-}
+//}
 }
 // Dans le fichier on voit qu'il y a des caractères sans signification particulières, il
 //y en a 80 (20x4)
