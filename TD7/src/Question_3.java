@@ -20,11 +20,7 @@ public class Question_3 {
 		
 		if (!eof) {
 			try {
-				FileOutputStream f = new FileOutputStream ("temp1");
-				
-
-			
-				
+				FileOutputStream f = new FileOutputStream ("temp3");
 				n = monfic.readInt();
 				
 				if (nb == 0) {
