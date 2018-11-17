@@ -1,6 +1,6 @@
-package piles;
+package pil;
 
-import piles.PileListeChainee.Maillon;
+import pil.PileListeChainee.Maillon;
 
 public class PileListeChaineeTest {
 
@@ -13,7 +13,7 @@ pile.empiler(20); // ajouter 20, 35, 40 a la pile
 pile.empiler(35);
 pile.empiler(40);
 pile.afficherPile(); // afficher le contenu de la pile
-e = pile.depiler(); // depiler un element du sommet de la pile et l afficher
+/*e = pile.depiler(); // depiler un element du sommet de la pile et l afficher
 if( e != null ) { 
 System.out.println("element depile : " + e.element);
 pile.afficherPile();
@@ -27,6 +27,6 @@ if( e != null ) { System.out.println("element depile : " + e.element); pile.affi
 System.out.println("lireSommet(): " + pile.lireSommet().element);// recuperer l element du sommet
 pile.empiler(90); // inserer 90 
 pile.afficherPile();
-
+*/
 } 
 }
