@@ -21,11 +21,10 @@ public class PileListeChainee {
 
 	public void empiler(Object ob) {
 
-		this.p= new Maillon (ob);
-		sommet= p;
-		
 	
-		
+		p= new Maillon (ob);
+		sommet= p;
+	
 	}
 
 	public Object depiler() {
@@ -49,10 +48,12 @@ public class PileListeChainee {
 
 	public void afficherPile() {
 		
-		while (p.element !=null) {
+		while (p.suivant !=null) {
 			
 		System.out.print("PIle : ["+this.p.element);
 		p=p.suivant;
+		
 		}
+		
 	}
 }
