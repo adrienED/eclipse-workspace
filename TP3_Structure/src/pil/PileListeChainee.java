@@ -10,50 +10,59 @@ public class PileListeChainee {
 	Maillon( Object e ) // constructeur 
 	
 	{
-		element = e; // le prochain est automatiquement mis à null 
+		element = e;  // le prochain est automatiquement mis à null 
+		
 		}
 	}
 	
 	Maillon sommet; // sommet de la pile
 	Maillon p; // maillon courant
-
+	int nb=0;
 
 
 	public void empiler(Object ob) {
 
 	
 		p= new Maillon (ob);
-		sommet= p;
-	
+		p.suivant= sommet;
+		sommet=p;
+		nb++;
+			
 	}
 
-	public Object depiler() {
-		// TODO Auto-generated method stub
-		return null;
+	public Maillon depiler() {
+		Maillon depiler = sommet;
+		sommet=sommet.suivant;
+		
+		nb--;
+		
+		return depiler;
 	}
 
-	public Object lireSommet() {
-		return this.sommet.element;
+	public Maillon lireSommet() {
+		return sommet;
 	}
 
 	public boolean pileVide() {
-		// TODO Auto-generated method stub
+		if (sommet !=null)
 		return false;
+		else 
+			return true;
 	}
 
 	public int taille() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return nb;
 	}
 
 	public void afficherPile() {
-		
-		while (p.suivant !=null) {
+		p=sommet;
+		while (p !=null) {
 			
-		System.out.print("PIle : ["+this.p.element);
+		System.out.print("["+p.element+"]");
 		p=p.suivant;
 		
-		}
-		
+		}	
+		System.out.println(p);
 	}
 }

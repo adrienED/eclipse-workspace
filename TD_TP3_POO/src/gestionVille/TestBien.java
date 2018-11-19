@@ -1,4 +1,4 @@
-/*package gestionVille;
+package gestionVille;
 
 public class TestBien {
 	
@@ -32,4 +32,4 @@ Logement b3 = new Logement (100,20,10,40);
 
 }
 }
-*/
+
