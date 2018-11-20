@@ -32,8 +32,9 @@ public class DataAnalyser {
 				done = true;
 			}
 		catch (FileNotFoundException exception) {
-			System.out.println("File not found.");
-			//exception.printStackTrace();
+			//System.out.println("File not found.");
+			exception.printStackTrace();
+			//System.exit(0); : coupe l'execution
 		}
 		catch (BadDataException exception) {
 			System.out.println("Bad data: " + exception.getMessage());
