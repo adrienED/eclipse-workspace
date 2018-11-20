@@ -15,4 +15,5 @@
 <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="piles.PileListeChainee.Maillon"/>
+<fullyQualifiedTypeName name="java.util.EmptyStackException"/>
 </qualifiedTypeNameHistroy>
