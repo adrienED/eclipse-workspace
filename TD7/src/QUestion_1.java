@@ -16,7 +16,9 @@ public class QUestion_1 {
 		monfic = new DataOutputStream(f);
 		
 			//for (int i =0; i<20;i++) {
-			int n = 256*256*256 * 'J' +256*256*'A' +256* 'V' +'A';
+			//int n = 256*256*256 * 'J' +256*256*'A' +256* 'V' +'A';
+			
+			
 			//int n = (int) (Math.round(Math.random()*70)-20);
 			monfic.writeInt(n);
 			//}

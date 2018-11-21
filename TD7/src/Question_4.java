@@ -2,6 +2,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Question_4 {
 
@@ -12,7 +13,7 @@ public class Question_4 {
 		DataOutputStream ficneg = null;
 		
 		try {
-			FileInputStream f1 = new FileInputStream("temp1)");
+			FileInputStream f1 = new FileInputStream("temp1");
 			FileOutputStream f2 = new FileOutputStream ("temp1.pos");
 			FileOutputStream f3 = new FileOutputStream ("temp1.neg");
 			
@@ -20,6 +21,8 @@ public class Question_4 {
 			ficpos = new DataOutputStream(f2);
 			ficneg = new DataOutputStream(f3);
 		}
+		catch (IOException e) {
+		System.out.println("erreur");
 	}
-
+	}
 }
