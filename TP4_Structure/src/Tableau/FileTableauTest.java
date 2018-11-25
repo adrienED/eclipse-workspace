@@ -16,7 +16,7 @@ public class FileTableauTest {
 	element = f.defiler();
 	System.out.println(element + " est supprimé");
 	f.afficherFile();
-	/*
+	
 	f.enfiler('D'); // ajouter 3 nouveaux elements 
 	f.enfiler('E');
 	f.enfiler('F');
@@ -29,7 +29,7 @@ public class FileTableauTest {
 	f.afficherFile();
 	System.out.println("taille file : " + f.taille());
 	
-	*/
+	
 	}
 	}
 

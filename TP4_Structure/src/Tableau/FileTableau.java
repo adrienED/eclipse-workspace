@@ -16,8 +16,7 @@ public class FileTableau implements File {
 		file = new Object[tailleMax];
 		debut = fin = -1;
 		nbElements = 0; 
-		
-		
+
 		}
 
 	@Override
@@ -29,8 +28,6 @@ public class FileTableau implements File {
 			
 		}
 		
-
-	
 
 	@Override
 	public Object defiler() {
