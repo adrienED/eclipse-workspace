@@ -12,23 +12,26 @@ public class FileTableauTest {
 	f.enfiler('B');
 	f.enfiler('C');
 	f.afficherFile();
-	element = f.defiler();// supprimer 1 element System.out.println(element + " est supprimé");
+	element = f.defiler();// supprimer 1 element 
+	System.out.println(element + " est supprimé");
 	element = f.defiler();
 	System.out.println(element + " est supprimé");
 	f.afficherFile();
-	
+
 	f.enfiler('D'); // ajouter 3 nouveaux elements 
 	f.enfiler('E');
 	f.enfiler('F');
 	f.afficherFile();
+	
 	element = f.defiler();
 	System.out.println(element + " est supprimé");
 	f.afficherFile();
+	
 	System.out.println("lireDebut(): " + f.lireDebut());
 	f.enfiler('G');
 	f.afficherFile();
 	System.out.println("taille file : " + f.taille());
-	
+
 	
 	}
 	}

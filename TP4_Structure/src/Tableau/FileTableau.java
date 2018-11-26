@@ -1,8 +1,7 @@
 package Tableau;
 
 public class FileTableau implements File {
-	
-	
+
 	
 		private int tailleMax; // taille maximale de la filee
 		private Object[] file; // la file est un tableau private
@@ -22,49 +21,50 @@ public class FileTableau implements File {
 	@Override
 	public void enfiler(Object ob) {
 		
-			file[debut+1]=ob;
-			debut ++;
-			fin++;
-			
-		}
+		if ((debut+fin)>=5) file[fin-1]=ob;
+		else {
 		
-
+			debut ++;	
+			file[debut]=ob;
+			
+		}	
+		}
 	@Override
 	public Object defiler() {
-
-		Object defiler =file[fin];
 		
-		file[fin]=null;		
-		fin--;
+		Object defiler =file[fin+1];
+		
+		fin++;
+		file[fin]=null;
 		return defiler;
 	}
 
 	@Override
 	public Object lireDebut() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return file[debut-1];
 	}
 
 	@Override
 	public boolean fileVide() {
-		// TODO Auto-generated method stub
+		if (debut==fin) return true;
 		return false;
 	}
 
 	@Override
 	public int taille() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return file.length-1;
 	}
 
 	@Override
 	public void afficherFile() {
-
+		System.out.print("File : ");
+		
 		for (int i =0; i<file.length; i++) {
-			System.out.println(file[i]);
+			System.out.print( file[i]+" ");
 		}
-		
-		
-	}
 
+	System.out.println("\n");
+	}
 }
