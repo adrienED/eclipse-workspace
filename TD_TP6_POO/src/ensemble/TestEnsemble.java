@@ -13,18 +13,17 @@ public class TestEnsemble {
 		B.ajoute(3);
 		B.ajoute(5);
 		B.ajoute(7);
+		//B.getElement(10); // Declenche l'exception
 		System.out.println(A);
 		System.out.println(B);
 		System.out.println(C);
-		/*C=A.union(B);
+		C=A.union(B);
 		System.out.println("union de A et B = "+C);
 		Ensemble D = new Ensemble();
 		D=A.intersection(B);
-		System.out.
-		println("intersection de A et B = "+D);
-		*/
-		}
+		System.out.println("intersection de A et B = "+D);
 		
+		}
 	}
 
 

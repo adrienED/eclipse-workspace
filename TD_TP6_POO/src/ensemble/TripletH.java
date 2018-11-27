@@ -1,3 +1,4 @@
+package ensemble;
 
 public class TripletH <E,T,V> {
 
@@ -25,7 +26,15 @@ public class TripletH <E,T,V> {
 
 	public String affiche() {
 
-		return "premiere valeur : "+this.getPremier() + "deuxieme valeur : " + this.getSecond() + "troisieme valeur :  " + this.getTroisieme();
+		return "premiere valeur : "+this.getPremier() + " deuxieme valeur : " + this.getSecond() + " troisieme valeur :  " + this.getTroisieme();
+	}
+	
+	public String toString() {
+		return "<<"+premier
+				+" ;"+second
+				+";" +troisieme
+				+">>";
+
 	}
 
 

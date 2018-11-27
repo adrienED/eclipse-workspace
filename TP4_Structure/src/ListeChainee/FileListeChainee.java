@@ -17,16 +17,37 @@ public class FileListeChainee {
 		}
 		
 		Maillon debut, fin;
-		int nbElements;
+		int nbElements=0;
+	
 		
 		
 		
 		
 		public void enfiler(Object ob) {
 			
-			Maillon debut= new Maillon (ob);
+			
+			fin = new Maillon (ob);
+			
+			if (nbElements==0)
+			debut= fin;
+			debut.suivant=fin;
 			
 			nbElements++;
+			
+			
+//			debut=fin;
+//			fin = new Maillon(ob);
+//			if (nbElements==0) {
+//			fin.suivant=null;
+//			
+//			}
+//			else {
+//				
+//				fin.suivant=debut;
+//			}
+//			
+//			
+//			nbElements++;
 			
 		}
 		
@@ -39,15 +60,19 @@ public class FileListeChainee {
 		
 		public void afficherFile() {
 			
+			int i=0;
 			System.out.print("File Liste Chainee F : ");
 			
-			while (fin==null) {
+			while (i<nbElements) {
 				
-			System.out.print(fin.element);
-			fin=fin.suivant;
 			
+			
+			System.out.print(debut.element+ " ");
+			debut=debut.suivant;
+			
+			i++;
 			}	
-			System.out.println("\n");
+			System.out.println(nbElements);
 		}
 	}
 

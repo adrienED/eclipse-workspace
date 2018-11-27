@@ -9,15 +9,16 @@ public class FileListeChaineeTest {
 		file.enfiler('A');
 		file.enfiler('B');
 		file.enfiler('C'); 
-		file.enfiler('D'); 
+		//file.enfiler('D'); 
 		file.afficherFile();
-		System.out.println("defiler(): " + file.defiler());
+		/*System.out.println("defiler(): " + file.defiler());
 		file.afficherFile();
 		System.out.println("lireDebut(): " + file.lireDebut());
 		file.enfiler('E'); file.enfiler('F');
 		System.out.println("defiler(): " + file.defiler());
 		file.afficherFile();
 		System.out.println("taille(): " + file.taille());
+		*/
 		}
 		}
 

@@ -1,3 +1,4 @@
+package ensemble;
 
 public class Triplet<E> {
 
