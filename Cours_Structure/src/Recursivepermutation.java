@@ -3,7 +3,7 @@ public class Recursivepermutation {
 
 	public static void main(String[] args) {
 		
-		permuter("JAVA");
+		permuter("SAM");
 
 	}
 	public static void permuter (String ch) {
@@ -14,7 +14,7 @@ public class Recursivepermutation {
 	public static void recPermuter (String fait, String reste) {
 		
 		//cas de base
-		if (reste.length()==0)
+		if (reste.length()==0) 
 			System.out.println(fait);
 		
 		else

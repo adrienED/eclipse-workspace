@@ -60,7 +60,11 @@ public class ListeTableau implements Liste {
 
 	@Override
 	public void insererDebut(Object ob) {
-		
+		for (int p=0; p<MAXTAILLE; p++) {
+			liste[p]=tmp;
+			liste[p]=
+			
+		}
 		
 	}
 
