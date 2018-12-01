@@ -15,7 +15,7 @@ public class FenGridBouton extends JFrame {
 			panneau.add(new JButton("D"));
 			panneau.add(new JButton("E"));
 			panneau.add(new JButton("F"));
-			fen.getContentPane().add(panneau) ; // ajouter le panneau à la fenêtre
+			fen.getContentPane().add(panneau) ; // ajouter le panneau à la fenetre
 			fen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			fen.setSize (300, 100) ;
 			fen.setVisible(true) ;

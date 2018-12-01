@@ -1,40 +1,44 @@
-package calculEnClasse;
-
+package convertisseur;
 import javax.swing.*;
 import java.awt.BorderLayout;
-import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Calculatrice extends JFrame {
-	JButton b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, 
-	bPlus, bMoins, bFois, bEgal, bSur, bRAZ;
+public class Convertisseur extends JFrame {
 	
-	JPanel panelBoutons;
-	JPanel panelNumerique;
-	JPanel panelOperations;
+	JLabel francs;
+	
+	JLabel euros;
 	
 	JTextField zoneResultat;
+	
+	JTextField zoneEntree;
+
+	JButton conv;
+	
+	JPanel panelBoutons;
+	
+	
 	
 	int opd1;
 	int opd2;
 	int resultat;
 	char operation;
-	boolean newOp = false;
 	
-	public Calculatrice(){
-		setTitle ("Ma premiere Calculatrice") ;
-		setSize (300, 200) ;
+	public Convertisseur(){
+		setTitle ("FRANCS -> EUROS") ;
+		setSize (300, 300) ;
 		
 		declarationBoutons();
 		placerBoutons();
-		this.getContentPane().add(BorderLayout.SOUTH,panelBoutons);
+		this.getContentPane().add(BorderLayout.NORTH,panelBoutons);
 		
 		zoneResultat = new JTextField(10);
 		zoneResultat.setText("0");
 		
-		this.getContentPane().add(BorderLayout.NORTH,zoneResultat);
+		this.getContentPane().add(FlowLayout);
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -77,47 +81,23 @@ public class Calculatrice extends JFrame {
 		
 	}
 	public void placerBoutons(){
-		
-
-		
 		panelBoutons = new JPanel();
-		
-		panelNumerique = new JPanel();
-		panelOperations = new JPanel();
-		
-		
-		panelNumerique.setLayout (new GridLayout());
-		
-		
-		panelNumerique.setLayout(new GridLayout(6,3));
-		panelNumerique.add(b0);
-		panelNumerique.add(b1);
-		panelNumerique.add(b2);
-		panelNumerique.add(b3);
-		panelNumerique.add(b4);
-		panelNumerique.add(b5);
-		panelNumerique.add(b6);
-		panelNumerique.add(b7);
-		panelNumerique.add(b8);
-		panelNumerique.add(b9);
-		
-		
-		panelOperations.setLayout (new GridLayout());
-		
-		panelOperations.add(bPlus);
-		panelOperations.add(bMoins);
-		panelOperations.add(bFois);
-		panelOperations.add(bSur);
-		panelOperations.add(bEgal);
-		
-	
-		//panelOperations.add(BRAZ)
-		panelBoutons.setLayout(new BorderLayout());
-		panelBoutons.setLayout(new BorderLayout());
-		panel
-		
-		
-		
+		panelBoutons.setLayout(new GridLayout(6,3));
+		panelBoutons.add(b0);
+		panelBoutons.add(b1);
+		panelBoutons.add(b2);
+		panelBoutons.add(b3);
+		panelBoutons.add(b4);
+		panelBoutons.add(b5);
+		panelBoutons.add(b6);
+		panelBoutons.add(b7);
+		panelBoutons.add(b8);
+		panelBoutons.add(b9);
+		panelBoutons.add(bPlus);
+		panelBoutons.add(bMoins);
+		panelBoutons.add(bFois);
+		panelBoutons.add(bSur);
+		panelBoutons.add(bEgal);
 		panelBoutons.add(bRAZ);
 	}
 	
@@ -137,108 +117,88 @@ public class Calculatrice extends JFrame {
 	 class B1Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0") && !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"1");
-	  			
-	  			else {
+	  			else
 	  				zoneResultat.setText("1");
-	  				newOp = false;
-	  			}
-	  			b1.setBackground(Color.GRAY);
 	 	}
 	 }
 	 class B2Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"2");
-	  			else {
+	  			else
 	  				zoneResultat.setText("2");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 
 	 class B3Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"3");
-	  			else {
+	  			else
 	  				zoneResultat.setText("3");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 
 	 class B4Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"4");
-	  			else {
+	  			else
 	  				zoneResultat.setText("4");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 
 	 class B5Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"5");
-	  			else {
+	  			else
 	  				zoneResultat.setText("5");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 class B6Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"6");
-	  			else {
+	  			else
 	  				zoneResultat.setText("6");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 
 	 class B7Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"7");
-	  			else {
+	  			else
 	  				zoneResultat.setText("7");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 
 	 class B8Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"8");
-	  			else {
+	  			else
 	  				zoneResultat.setText("8");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 
 	 class B9Listener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			String text = zoneResultat.getText();
-	  			if(!text.equals("0")&& !newOp)
+	  			if(!text.equals("0"))
 	  				zoneResultat.setText(text+"9");
-	  			else {
+	  			else
 	  				zoneResultat.setText("9");
-	  				newOp = false;
-	  			}
 	 	}
 	 }
 	 
@@ -276,10 +236,8 @@ public class Calculatrice extends JFrame {
 	 
 	 class BRAZListener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
-	  			opd1 = 0;
-	  			opd2=0;
-	  			operation=' ';
-	  			newOp = false;
+	  			opd1 = Integer.parseInt(zoneResultat.getText());
+	  			operation='C';
 	  			zoneResultat.setText("0");
 	 	}
 	 }
@@ -287,7 +245,6 @@ public class Calculatrice extends JFrame {
 	 class BEgalListener implements ActionListener {
 	  		public void actionPerformed(ActionEvent Event) {		
 	  			opd2 = Integer.parseInt(zoneResultat.getText());
-	  			
 	  			switch(operation){
 	  			case '+' :
 	  				resultat = opd1+opd2;
@@ -297,31 +254,15 @@ public class Calculatrice extends JFrame {
 	  				break;
 	  			case '*' :
 	  				resultat = opd1*opd2;
-	  				break;
-	  				
 	  			case '/' :
-	  			
 	  				resultat = opd1/opd2;
-	  			
-	  				break;
-	  				
 	  			case 'C' :
-	  				
 	  				resultat = 0;
 	  				break;
-	  				
 	  			default : resultat=0;
 	  			}			
+	  			zoneResultat.setText(resultat+"");
 	  			
-	  			if(resultat == Integer.MIN_VALUE) {
-	 
-	  				zoneResultat.setText("ERROR : /0");
-	  				zoneResultat.setBackground(Color.RED);
-	  			}
-	  			else
-	  				zoneResultat.setText(resultat+"");
-	  			newOp = true;
 	 	}
 	 }
-	
-}
+
