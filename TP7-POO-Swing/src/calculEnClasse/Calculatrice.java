@@ -114,11 +114,11 @@ public class Calculatrice extends JFrame {
 		//panelOperations.add(BRAZ)
 		panelBoutons.setLayout(new BorderLayout());
 		panelBoutons.setLayout(new BorderLayout());
-		panel
+		//panel
 		
 		
 		
-		panelBoutons.add(bRAZ);
+		//panelBoutons.add(bRAZ);
 	}
 	
 	// les listners des boutons

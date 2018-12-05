@@ -16,9 +16,9 @@ public class FileListeChainee {
 			}
 		}
 		
-		Maillon debut, fin;
-		int nbElements=0;
-	
+		Maillon debut, fin,p,courant;
+		
+		public int nbElements=0;
 		
 		
 		
@@ -26,54 +26,49 @@ public class FileListeChainee {
 		public void enfiler(Object ob) {
 			
 			
-			fin = new Maillon (ob);
-			
-			if (nbElements==0)
-			debut= fin;
-			debut.suivant=fin;
+			p = new Maillon (ob);
+			if (nbElements==0) {
+			debut=debut.suivant=p;
 			
 			nbElements++;
+			}
 			
+			else {
+			debut.suivant = p;
+			debut=debut.suivant;
 			
-//			debut=fin;
-//			fin = new Maillon(ob);
-//			if (nbElements==0) {
-//			fin.suivant=null;
-//			
-//			}
-//			else {
-//				
-//				fin.suivant=debut;
-//			}
-//			
-//			
-//			nbElements++;
+			nbElements++;
+			}
+}
 			
-		}
+		
 		
 		
 		public void defiler() {
 			
-			
+			Maillon defiler = debut;
+			debut=debut.suivant;
+			nbElements--;
 			
 		}
 		
 		public void afficherFile() {
 			
-			int i=0;
-			System.out.print("File Liste Chainee F : ");
+
+				courant = debut;
+				System.out.print("\nListe chainée : ");
+
+				while (courant !=null)
+				{
+					System.out.print(courant.element +" ->");
+					courant = courant.suivant;
+		
+
 			
-			while (i<nbElements) {
-				
-			
-			
-			System.out.print(debut.element+ " ");
-			debut=debut.suivant;
-			
-			i++;
-			}	
-			System.out.println(nbElements);
 		}
-	}
+		}
+}
+
+	
 
 

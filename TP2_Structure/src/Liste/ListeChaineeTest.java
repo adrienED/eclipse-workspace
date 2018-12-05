@@ -9,7 +9,7 @@ public class ListeChaineeTest {
 		 listesimple.creerListe(8); // creer 4 maillon
 		 listesimple.afficher(); // afficher la liste 
 		System.out.print("\nInserer au début 45:"); 
-		 listesimple.insererDebut(45);
+		 listesimple.insererDebut(39);
 		 listesimple.afficher();
 		 System.out.print("\nInserer 50 après 35:"); 
 		listesimple.insererApres(50,35); // inseerer 66 apres 33 
@@ -23,9 +23,13 @@ public class ListeChaineeTest {
 		 listesimple.afficher();
 		System.out.println("\ntaille(): " + listesimple.taille());
 		listesimple.afficherMultiple(5);
+		System.out.println(listesimple.tete.element);
+		/*Exo 4CC
+		 * 
+		*/
 		
-		}
-		}
+	}
+}
 
 	
 	

@@ -1,5 +1,7 @@
 package Liste;
 
+import java.util.Scanner;
+
 public class ListeChainee implements Liste{
 
 	class Maillon 
@@ -59,6 +61,31 @@ public void creerListe (int n)
 		
 	}
 	nbrElements = n;
+}
+
+
+
+public void creerListe1 () 
+
+{
+	int p=0;
+	int n;
+	System.out.println("Premier chiffre ?" );
+	Scanner sc = new Scanner (System.in);
+	n = sc.nextInt();
+	courant = new Maillon (n);
+	tete = courant;
+	
+	while (n!=0)
+	{
+		System.out.println("Prochain chiffre ?" );
+		Scanner sd = new Scanner (System.in);
+		n = sd.nextInt();
+		if (n!=0)
+		courant = courant.suivant = new Maillon (n);
+		
+	}
+	nbrElements = p++;
 }
 
 
@@ -173,6 +200,8 @@ public void creerListe (int n)
 	}
 	*/
 	
+	
+	
 	public void afficherMultiple (int n) {
 		
 		courant=tete;
@@ -188,12 +217,103 @@ public void creerListe (int n)
 		
 		System.out.println(courant.element);
 	}
+	
+	public ListeChainee entrelacer (ListeChainee liste2 ) {
+		Maillon l1 = tete;
+		Maillon l2 = liste2.tete;
+		
+		
+		
+		while (l1 !=null && l2!=null ) {
+			
+			
+			Maillon tmp1;
+			Maillon tmp2;
+			
+			tmp1 =l1.suivant;
+			tmp2=l2.suivant;
+			
+			
+			l1.suivant=l2;
+			l2.suivant=tmp1;
+			
+			l1=tmp1;
+			l2=tmp2;
+					
+			
+			
+			
+		}
+		return this;
+		
+		
+	}
+	
+	
+
+	
+	
+
+	
+	
+	
+	
+	/*
+	
+	
+	
+	
+	
+	
+	
+	public static void exo4CC (ListeChainee liste1, ListeChainee liste2) {
+		
+		Maillon tmp1=liste1.tete;
+		Maillon tmp2=liste2.tete;
+		
+		ListeChainee l1=liste1;
+		ListeChainee l2 = liste2;
+		
+		tmp2=l2.suivant;
+		l2=l1;
+		
+		while (l1.suivant !=null) {
+			l1=l1.suivant;
+			
+		}
+		l1.suivant=tmp2;
+		
+		
+		
+		System.out.print("\nListe chainée : ");
+		
+		while (l1 !=null)
+		{
+			System.out.print(l1.element +" ->");
+			l1 = l1.suivant;
+}
+
+			System.out.println(l1);
+	
+	while (l2 !=null)
+	{
+		System.out.print(l2.element +" ->");
+		l2 = l2.suivant;
+}
+
+		System.out.println(l2);
+	
+	
+	
+	}
+	*/
 
 	
 	
 	
 	
 }
+
 
 
 
